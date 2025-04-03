@@ -1,0 +1,880 @@
+/*GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Calibri';
+    height: 100vh;
+}
+h1 {
+    font-family: 'Anoxic Light';
+    font-size: 2.8rem;
+}
+h2 {
+    /* font-family: 'Anoxic Light'; */
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-align: center;
+    color: white;
+}
+h3 {
+    /* font-family: 'Anoxic Light'; */
+    font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 204, 51);
+}
+a:hover {
+    color: rgb(0, 218, 152);
+    transition: ease-in-out 0.75s;
+}
+li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1.2rem;
+    margin: 15px;
+    line-height: 2.5rem;
+}
+hr{
+   width: 80%;
+   margin: 0 auto;
+    color: rgb(255, 204, 51);
+}
+/*GENERALES HASTA AQUÍ*/
+
+/*HEADER*/
+
+.contenedorIndex{
+    background-image: url(/img/fondoNegroAmarillo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -100;
+    overflow-x: hidden;
+}
+.site-header {
+    padding: 15px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -100;
+    overflow-x: hidden;
+}
+.site-header .site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header .contenedor-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 300px;
+}
+.site-header .site-nav .logo-nav {
+    width: 200px;
+    margin: 20px;
+}
+.site-header .logo-principal {
+    width: 400px;
+}
+.site-header .site-nav .btnIndex {
+    width: fit-content;
+    background-color: rgba(255, 204, 51, 0);
+    color: rgb(255, 204, 51);
+    border: 2px solid rgb(255, 204, 51);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Anoxic';
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
+}
+.site-header .btnIndex:hover {
+    width: fit-content;
+    background-color: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Anoxic';
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+.site-header .site-nav ul {
+    flex-wrap: wrap;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    z-index: 100;
+    margin: 20px;
+}
+.site-header .site-nav ul li {
+    list-style: none;
+    margin: 10px;
+    color: rgb(255, 204, 51);
+}
+/*HASTA AQUÍ HEADER*/
+
+
+/*PÁGINA DE EMPRESA*/
+.contenedor-empresa h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+.contenedor-empresa h2{
+    margin: 50px;
+}
+.contenedor-empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-empresa p {
+    width: 70%;
+    text-align: center;
+    margin: 10px 0;
+}
+.img-zona-empresa{
+    margin: 50px;
+    border-radius: 15px;
+    width: 500px; 
+    height: 600px;
+    object-fit: cover; 
+}
+.bloque-diseno,
+.bloque-consultoria,
+.bloque-reparacion,
+.bloque-ciberseguridad,
+.bloque-asistencia {
+    display: flex;
+}
+.contenedor-empresa .bloque-diseno div,
+.bloque-reparacion div,
+.bloque-consultoria div,
+.bloque-asistencia div,
+.bloque-ciberseguridad div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*HASTA AQUÍ ZONA EMPRESA*/
+
+/*MAIN*/
+
+/* .site-main {
+    background-image: url(/img/fondoNegroAmarillo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -100;
+} */
+
+.contenedorIndex .site-main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.contenedorIndex .site-main h1 {
+    color: rgb(255, 204, 51);
+    text-align: center;
+    padding: 50px;
+}
+.contenedorIndex .site-main h2{
+margin: 20px;
+}
+
+/*BLOQUE SOLUCIONES*/
+
+.contenedorIndex .site-main .bloque-soluciones{
+    margin: 50px auto;
+}
+
+.bloque-soluciones img{
+    width: 200px;
+    margin: 40px;
+}
+
+.contenedorIndex .site-main.bloque-soluciones div {
+    color: white;
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1 ul li, .contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2 ul li{
+    color: white;
+    display: block;
+    line-height: 2.5rem;
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1, .bloque-soluciones2{
+    display: flex;
+    align-items: center;
+}
+
+.contenedorIndex .site-main .bloque-soluciones2 ul li{
+   text-align: right;
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2{
+    flex-direction: row-reverse;
+   }
+
+.contenedorIndex .site-main .bloque-soluciones h3{
+text-align: center;
+color: white;
+letter-spacing: 5px;
+line-height: 3rem;
+font-size: 2rem;
+}
+
+
+/*HASTA AQUÍ BLOQUE SOLUCIONES*/
+
+/*BLOQUE SERVICIOS*/
+
+.bloque-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-main .bloque-servicios ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.site-main .nuestros-servicios ul li {
+    color: white;
+    margin: 20px;
+    animation-duration: 3s;
+    animation-name: deslizamiento;
+}
+
+@keyframes deslizamiento {
+
+    0% {
+        margin-right: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+.site-main .nuestros-servicios ul li:hover {
+    color: white;
+    margin: 20px;
+   
+}
+
+.imagen-bloque-servicios {
+    border-radius: 20px;
+    width: 40%;
+    margin: 50px;
+}
+
+.btnSabermas {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: rgb(255, 204, 51);
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 300px;
+    top: 40px;
+    cursor: pointer;
+
+}
+
+.btn-saber-mas:hover {
+    background-color: rgb(255, 102, 242);
+    cursor: pointer;
+}
+
+.icono-servicios, .icono-negocios, .icono-mando{
+    width: 200px;
+}
+
+.h2nuestrosServicios{
+    text-align: center;
+    color: white;
+}
+
+.bloque-para-todos, .bloque-negocios, .bloque-juego {
+    width: 50%;
+    text-align: center;
+    border: 1px solid rgb(255, 204, 51);
+    border-radius: 15px;
+    margin: 30px 0;
+    padding: 15px;
+}
+
+
+.bloque-juego, .bloque-para-todos,.bloque-negocios{
+    color: white;
+    margin: 20px;
+}
+
+.extensionServicios{
+    display: flex;
+}
+
+.extensionServicios div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.extensionServicios div ul li{
+margin: auto;
+padding: 10px;
+
+}
+
+
+
+
+/*HASTA AQUÍ BLOQUE SERVICIOS*/
+
+
+/*NUESTRA FILOSOFIA*/
+
+.nuestra-filosofia {
+    color: white;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+/*NUESTRA FILOSOFIA HASTA AQUI*/
+
+/*GAMERZONE*/
+
+.zonaGamer {
+    background-image: url(/img/gamer-morado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    z-index: 150;
+    padding: 50px 20px;
+    filter: saturate(1);
+}
+
+.zonaGamer h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 0 0 5px rgb(182, 114, 255),
+        0 0 5px rgb(27, 255, 10),
+        0 0 5px rgb(13, 255, 215),
+        0 0 5px rgb(255, 0, 179);
+}
+
+.zonaGamer .contenedor-zonaGamer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque-zonaGamer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.contenedor-zonaGamer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pzonaGamer {
+    color: white;
+    font-size: 1.2rem;
+    margin: 30px;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.btnEntrar {
+    width: fit-content;
+    background-color: rgba(255, 204, 51, 0);
+    color: rgb(255, 204, 51);
+    border: 2px solid rgb(255, 204, 51);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Anoxic';
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.btnEntrar:hover {
+    width: fit-content;
+    background-color: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Anoxic';
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.animacion:hover,
+.animacion:focus {
+    -webkit-animation: animacion 1s;
+    animation: animacion 1s;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes animacion {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+@keyframes animacion {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.animacion {
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+}
+
+.slider-zonaGamer {
+    width: 600px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+/*HASTA AQUÍ GAMERZONE*/
+
+/*DONDE ESTAMOS*/
+
+.donde-estamos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(228, 228, 228)
+}
+
+.donde-estamos div {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donde-estamos div a {
+    font-size: 1.2rem;
+    margin: 15px;
+}
+
+/*DONDE ESTAMOS HASTA AQUI*/
+
+/* RECORDATORIO */
+
+.recordatorio img {
+    width: 200px;
+}
+
+.recordatorio {
+    background-image: url(img/Logo-negro.png);
+    background-color: rgb(228, 228, 228);
+    background-size: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+
+}
+
+/* HASTA AQUÍ RECORDATORIO */
+
+/*SOBRE NOSOTROS*/
+
+.contenedor-sobre-nosotros h1{
+   text-align: center;
+}
+
+/*SLIDER DESDE AQUÍ*/
+.slider {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.slider .prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 204, 51);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+/*SLIDER HASTA AQUÍ*/
+
+/*SOBRE NOSOTROS*/
+
+/*FORMULARIO PRINCIPAL (INDEX)*/
+
+.formularioIndex form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    padding: 50px;
+}
+
+.formularioIndex form>input {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+.formularioIndex fieldset {
+    margin: 10px auto;
+    border: none;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    width: 30%;
+}
+
+.formularioIndex fieldset legend {
+    margin: auto;
+}
+
+.formularioIndex textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/*HASTA AQUÍ FORMULARIO PRINCIPAL (INDEX)*/
+
+/*FORMULARIO INICIO DE SESIÓN PARA ZONA EMPRESA*/
+#formulario-registro-empresa {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+#formulario-registro-empresa .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario-registro-empresa .logueo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario-registro-empresa .logueo .registro {
+    display: flex;
+}
+
+#formulario-registro-empresa .logueo .logueoUsuario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-registro-empresa .logueo .registro div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorOtrasPaginas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btnOtraPagina {
+    margin: 10px;
+}
+
+#formulario-inicio p {
+    text-align: center;
+    color: white;
+}
+
+.registrarse {
+    margin: 20px;
+}
+
+#formulario-registro-empresa p {
+    color: lightsteelblue;
+}
+
+.logueoUsuario input {
+    padding: 8px;
+    border-radius: 15px;
+    margin: 14px;
+    background-color: transparent;
+    color: rgb(255, 204, 51);
+    border: 1px solid rgb(255, 204, 51);
+}
+
+.btnOtraPagina {
+    padding: 8px;
+    margin: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 204, 51);
+}
+
+#formulario-registro-empresa .logueo button {
+    margin: 15px;
+    background-color: transparent;
+}
+
+.fa-discord {
+    color: rgb(255, 204, 51);
+}
+
+.fa-google {
+    color: rgb(255, 204, 51);
+}
+
+.fa-apple {
+    color: rgb(255, 204, 51);
+}
+
+#facebookSesion {
+    color: rgb(255, 204, 51)
+}
+
+/*HASTA AQUÍ INICIO SESIÓN EMPRESA*/
+
+/*FORMULARIO NUEVO REGISTRO*/
+
+.formularioNuevoRegistro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    padding: 50px;
+}
+
+.formularioNuevoRegistro form>input {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+}
+
+.formularioNuevoRegistro fieldset {
+    margin: 10px auto;
+    border: none;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    width: 30%;
+}
+
+.formularioNuevoRegistro textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/*HASTA AQUÍ FORMULARIO NUEVO REGISTRO*/
+
+/*SITE FOOTER*/
+
+.site-footer {
+    padding: 20px 0;
+    background-color: rgb(10, 10, 10);
+}
+
+.site-footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: rgb(182, 182, 182);
+}
+
+.site-footer li {
+    padding: 0 5px;
+    color: rgb(182, 182, 182);
+    margin: 10px;
+}
+
+.site-footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.site-footer ul a:hover {
+    opacity: 1;
+}
+
+.site-footer .social {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.site-footer .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.site-footer .social>a:hover {
+    opacity: 0.9;
+}
+
+.site-footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(182, 182, 182);
+    margin-bottom: 0;
+}
+
+.fa-facebook {
+    color: rgb(182, 182, 182);
+}
+
+.fa-instagram {
+    color: rgb(182, 182, 182);
+}
+
+.fa-linkedin {
+    color: rgb(182, 182, 182);
+}
+
+.fa-whatsapp {
+    color: rgb(182, 182, 182);
+}
+
+.fa-tiktok {
+    color: rgb(180, 182, 182);
+}
+
+
+/*HASTA AQUÍ SITE-FOOTER*/
+
+/*COOKIES, AVISO LEGAL Y POLITICA DE PRIVACIDAD */
+
+.temasLegales {
+    margin: 50px;
+}
+
+.temasLegales ul {
+    margin-left: 40px;
+}
+
+.temasLegales ul li {
+    list-style: square;
+    line-height: 2;
+    margin-left: 50px;
+}
+
+.temasLegales table {
+    border: 2px solid black;
+    width: 80%;
+    padding: 10px;
+}
+
+.temasLegales table tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.temasLegales h1 {
+    margin: 50px;
+}
+
+.temasLegales h2 {
+    margin: 50px 50px 30px 30px;
+}
+
+.temasLegales p {
+    width: 80%;
+    margin-left: 30px;
+}
+
+/*HASTA AQUÍ COOKIES, AVISO LEGAL Y POLITICA DE PRIVACIDAD*/

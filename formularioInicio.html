@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="site-header">
+        <div class="site-nav">
+            <div>
+                <a href="/index.html">
+                    <img src="/img/logo-solo-letras.png" alt="logo de ComputerZ solo letras" class="logo-nav"></a>
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="zonaEmpresa.html" class="liNav">Empresas</a></li>
+                    <li><a href="/zonaGamer.html" class="liNav">ZonaGamer</a></li>
+                    <li class="liNav">94 645 66 51</li>
+                    <li><a href="#donde-estamos-id">Donde estamos</a></li>
+                    <li class="liNav"><a href="https://idirecto.es/">Tienda</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenedor-logo">
+            <img src="img/Logo-blanco.png" alt="version blanca del logo" class="logo-principal">
+        </div>
+
+    </div>
+    <div id="formulario-registro-empresa">
+        <div class="logueo">
+            <div class="registro">
+                <button onclick="iniciarSesion()" class="btnEntrar">Iniciar sesión</button>
+                <button onclick="registro()" class="btnEntrar">Registrarse</button>
+            </div>
+            <div class="logueoUsuario">
+                <input type="text" name="nombre" id="nombre" required maxlength="20" placeholder="Usuario">
+                <input type="password" name="contrasena" id="contrasena" required placeholder="Contraseña">
+            </div>
+            <a href="#">¿Has olvidado tu contraseña?</a>
+        </div>
+
+        <div class="contenedorOtrasPaginas">
+            <div>
+                <i class="fa-brands fa-google"></i>
+                <button onclick="iniciarSesion()" class="btnOtraPagina"><i class="bi bi-google"></i>Iniciar sesión con
+                    Google</button>
+            </div>
+            <div>
+                <i class="fa-brands fa-discord"></i>
+                <button onclick="iniciarSesion()" class="btnOtraPagina">Iniciar
+                    sesión con Discord</button>
+            </div>
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <button onclick="iniciarSesion()" class="btnOtraPagina"> <i class="bi bi-apple"></i>Iniciar sesión con
+                    Apple</button>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook" id="facebookSesion"></i>
+                <button onclick="iniciarSesion()" class="btnOtraPagina"> <i class="bi bi-facebook"></i>Iniciar sesión
+                    con
+                    Facebook</button>
+            </div>
+
+        </div>
+        <p>Al iniciar sesión acepta usted los <a href="#">términos de uso</a></p>
+    </div>
+
+    <div class="donde-estamos" id="donde-estamos-id">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1742570991970!6m8!1m7!1sKuraoFvlAPsFd3lf1HotbQ!2m2!1d43.2982490899498!2d-2.990751511575891!3f331.90894!4f0!5f0.7820865974627469"
+            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="direcciones">
+            <p><b>Calle Juntas Generales, 34</b></p>
+            <p><b>48901 - Barakaldo</b></p>
+            <p><b> el: 94 645 66 51</b></p>
+            <a href="#"><b>comercial@computerz.es</b></a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="social"><a href="https://www.facebook.com/people/ComputerZ/61571506870466/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+           <a href="https://www.tiktok.com/@computerzbarakaldo" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/computerzbarakaldo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
+        </div>
+        <ul class="lista-linea">
+            <li class="footer-sobre-nosotros"><a href="#">Sobre nosotros</a></li>
+            <li class="footer-terminos"><a href="#" target="_blank">Cookies</a></li>
+            <li class="footer-privacidad"><a href="#" target="_blank">Política de privacidad</a></li>
+            <li class="aviso-legal" target="blank">Aviso legal</li>
+        </ul>
+        <p class="copyright">ComputerZ © 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
