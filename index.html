@@ -13,25 +13,35 @@
 
     <div class="contenedorIndex">
         <div class="site-header">
-            <div class="site-nav">
-                <div>
-                    <a href="#"><img src="/img/logo-solo-letras.png" alt="logo de ComputerZ solo letras"
-                            class="logo-nav"></a>
+            <a href="/index.html"><img src="img/logo-solo-letras.png" alt="logo de ComputerZ solo con letras"
+                    class="logo-letras"></a>
+                    <button class="abrir-menu">Abrir</button>
+            <nav class="site-nav">
+                <ul class="lista-nav">
+
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+
+                    <li><a href="/zonaEmpresa.html" class="liNav elemento">Empresas</a></li>
+                    <li><a href="/zonaGamer.html" class="liNav">ZonaGamer</a></li>
+                    <li id="phone"><a href="tel:946456651">94 645 66 51</a></li>
+                    <li><a href="#donde-estamos-id">Donde estamos</a></li>
+                    <li class="liNav"><a href="https://idirecto.es/">Tienda</a></li>
+                </ul>
+                <button onclick="irAlFormulario()" class="btnIndex"><b>Iniciar sesión</b></button>
+                <div class="social"><a href="https://www.facebook.com/people/ComputerZ/61571506870466/"
+                        target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@computerzbarakaldo" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/computerzbarakaldo/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-                <nav class="site-nav">
-                    <ul>
-                        <li><a href="/zonaEmpresa.html" class="liNav">Empresas</a></li>
-                        <li><a href="/zonaGamer.html" class="liNav">ZonaGamer</a></li>
-                        <li id="phone"><a href="tel:946456651">94 645 66 51</a></li>
-                        <li><a href="#donde-estamos-id">Donde estamos</a></li>
-                        <li class="liNav"><a href="https://idirecto.es/">Tienda</a></li>
-                    </ul>
-                    <button onclick="irAlFormulario()" class="btnIndex"><b>Iniciar sesión</b></button>
-                </nav>
-            </div>
-            <div class="contenedor-logo">
-                <img src="img/Logo-blanco.png" alt="version blanca del logo" class="logo-principal">
-            </div>
+            </nav>
+        </div>
+
+        <div class="contenedor-logo">
+            <img src="img/logo-fondo-blanco.jpg" alt="version blanca del logo" class="logo-principal">
         </div>
 
 
@@ -44,7 +54,7 @@
             <div class="bloque-servicios">
                 <div class="nuestros-servicios">
                     <ul>
-                        <li>Diseño y creación de páginas web tanto en Wordpress como código</li>
+                        <li> Diseño y creación de páginas web tanto en Wordpress como código</li>
                         <li>Venta y reparación de equipos informáticos</li>
                         <li>Asistencia remota</li>
                         <li>Ciberseguridad</li>
@@ -52,15 +62,14 @@
                     </ul>
                     <button onclick="irASobreNosotros()" class="btnSabermas">Conócenos</button>
                 </div>
-                <img src="/img/gato-teclado-ordenador-ia.jpeg"
-                    alt="gato naranja sobre un escritorio con un teclado y un ordenador"
+                <img src="/img/gato-dormido.jpg" alt="gato negro sobre un escritorio con un teclado y un ordenador"
                     class="imagen-bloque-servicios">
             </div>
 
             <div class="extensionServicios">
                 <div class="bloque-para-todos">
                     <h2>PARA TODOS</h2>
-                    <img src="/img/responsibility.png" class="icono-servicios"
+                    <img src="/img/servicios.png" class="icono-servicios"
                         alt="icono de una mano sosteniendo una rueda de ajuste y estrellas">
                     <ul>
                         <li>Tienda física y online</li>
@@ -70,7 +79,7 @@
                 </div>
                 <div class="bloque-negocios">
                     <h2>BUSINESS AREA</h2>
-                    <img src="/img/profit.png" class="icono-negocios"
+                    <img src="/img/negocios.png" class="icono-negocios"
                         alt="icono de una pantallas con una rueda de ajuste">
                     <ul>
                         <li>Diseño de páginas web</li>
@@ -81,7 +90,7 @@
                 </div>
                 <div class="bloque-juego">
                     <h2>GAMERZ</h2>
-                    <img src="/img/gamepad.png" class="icono-mando" alt="icono de un mando de juego">
+                    <img src="/img/juego.png" class="icono-mando" alt="icono de un mando de juego">
                     <ul>
                         <li>Ordenadores personalizados</li>
                         <li>Equipamiento gamer</li>
@@ -105,10 +114,10 @@
                     cada día para hacer de tu experiencia algo excepcional.</p>
             </div>
 
-<hr>
+            <hr>
             <div class="bloque-soluciones">
                 <div class="bloque-soluciones1">
-                    <img src="/img/settings.png" alt="icono de una llave inglesa y unas ruedas de ajuste">
+                    <img src="/img/ajustes-negro.png" alt="icono de una llave inglesa y unas ruedas de ajuste">
                     <ul>
                         <li>Desinfecciones</li>
                         <li>Formateo y reinstalación de Sistemas Operativos</li>
@@ -117,10 +126,10 @@
                         <li>Recuperación de datos</li>
                     </ul>
                 </div>
-                <h3>Pide <a href="#">cita previa</a> y ahorraté colas y esperas innecesarias</h3>
+                <h3>Pide <a href="#formularioIndex">cita previa</a> y ahorraté colas y esperas innecesarias</h3>
                 <h3>¡En ComputerZ sabemos que tu tiempo es muy importante!</h3>
                 <div class="bloque-soluciones2">
-                    <img src="/img/casa-blanco.png" alt="icono de una casa">
+                    <img src="/img/casa-negro.png" alt="icono de una casa">
                     <ul>
                         <li>Ordenadores de oficina</li>
                         <li>Ordenadores personalizados</li>
@@ -135,8 +144,7 @@
                 <h2>Bienvenidos a la zona Gamer!</h2>
                 <div class="contenedor-zonaGamer">
                     <div>
-                        <img src="/img/jugando-mando.jpg" alt="slider de imágenes de la zona Gamer"
-                            class="slider-zonaGamer">
+                        <video src="/img/jugando-juego.webm" autoplay loop></video>
                         <button onclick="irAZonaGamer()" class="btnEntrar animacion"><b>¡ENTRA!</b></button>
                     </div>
                     <div class="bloque-zonaGamer">
@@ -162,6 +170,99 @@
                 </div>
             </div>
 
+            <h2>FAQS</h2>
+            <div class="faqs">
+                <div class="details">
+                    <details>
+                        <summary>¿Qué servicios ofreceis exactamente?</summary>
+                        <p>En ComputerZ, nos especializamos en ofrecer servicios integrales que incluyen la creación e
+                            implementación de páginas web responsivas y optimizadas para el SEO de Google, tanto en
+                            código personalizado como en WordPress, además también modernizamos páginas web desfasadas. Nuestro equipo también se dedica a la venta y
+                            reparación de equipos informáticos y periféricos, garantizando un rendimiento óptimo.
+                            Además, ofrecemos soluciones de gamificación y consultoría digital para potenciar tu
+                            negocio. Con nuestra asistencia remota personalizada, aseguramos un soporte técnico
+                            eficiente y accesible. También contamos con experiencia en ciberseguridad para proteger tus
+                            datos de amenazas digitales. ¡Confía en ComputerZ para mejorar tu presencia en línea y tu
+                            infraestructura tecnológica!</p>
+                    </details>
+                    <details>
+                        <summary>¿Por qué es diferente <b>ComputerZ?</b></summary>
+                        <p>En ComputerZ no nos limitamos a vender máquinas. Nuestro verdadero objetivo es satisfacer las
+                            necesidades de las personas, buscando las soluciones que mejor se adapten a cada cliente.
+                            Ofrecemos un trato humano y cercano, hablando contigo de persona a persona. Y lo más
+                            importante:
+                            estamos aquí para escucharte. Tu voz es fundamental para nosotros, porque en ComputerZ, tu
+                            satisfacción es nuestra prioridad. Explora todo lo que podemos hacer por ti, ¡tu próximo
+                            gran
+                            proyecto digital empieza aquí!</p>
+                    </details>
+                    <details>
+                        <summary>¿Cúal es el tiempo de respuesta del soporte técnico?</summary>
+                        <p>
+                            El tiempo de respuesta de nuestro soporte técnico en ComputerZ puede variar según varios factores, como la distancia de la incidencia, los materiales necesarios para la reparación, nuestra carga de trabajo actual y la urgencia de la avería. Nos esforzamos por ofrecer un servicio rápido y eficiente, priorizando las situaciones más críticas. Para obtener una estimación más precisa y adaptada a tu caso específico, te invitamos a utilizar nuestro formulario de contacto en el sitio web o a llamarnos directamente por teléfono. Nuestro equipo estará encantado de asistirte y resolver cualquier duda que tengas. ¡En ComputerZ, estamos aquí para ayudarte!
+                        </p>
+                    </details>
+                    <details>
+                        <summary>¿Cuales son los costos asociados?</summary>
+                        <p>Los costos asociados a nuestros servicios pueden variar según el tipo de servicio requerido,
+                            ya que cada proyecto es único y se adapta a las necesidades específicas de nuestros
+                            clientes. Para obtener una cotización precisa y personalizada, en ComputerZ te invitamos a
+                            que utilices nuestro formulario de contacto en el sitio web o que nos llames directamente al
+                            número proporcionado. Estaremos encantados de atenderte y resolver cualquier duda que tengas
+                            sobre nuestros servicios y precios. ¡Esperamos poder ayudarte pronto!</p>
+                    </details>
+                    <details>
+                        <summary>¿Cúanto se tarda en hacer una página web?</summary>
+                        <p>Entendemos que no hay un tiempo fijo para el desarrollo de tu página web, ya que
+                            depende tanto de ti como de nosotros. Si ya cuentas con fotos y textos, y tu proyecto es una
+                            página básica tipo “landing page”, podrías tenerla lista para publicar en aproximadamente
+                            dos
+                            semanas. Sin embargo, en ComputerZ creemos que es mejor tomarse el tiempo necesario para
+                            asegurarnos de que cada detalle esté optimizado para SEO y que estés completamente
+                            satisfecho
+                            con el resultado. Queremos que estés orgulloso de tu página, ¡y nosotros también!</p>
+                    </details>
+                    <details>
+                        <summary>¿Sería posible que me atendiera la misma persona a lo largo de todo el proyecto?
+                        </summary>
+                        <p>Cuando trabajes con ComputerZ, contarás con un responsable de proyecto que estará en contacto
+                            contigo durante todo el proceso, hasta que todo esté finalizado. Además, tendrás la
+                            oportunidad
+                            de hablar directamente con los técnicos, programadores, diseñadores y demás personas
+                            involucradas en el proyecto en momentos clave. Así, aseguramos que la comunicación sea
+                            fluida y
+                            efectiva entre todos. ¡Estamos aquí en ComputerZ para que todo salga perfecto!</p>
+                    </details>
+                    <details>
+                        <summary>¿Ofreceis soporte técnico después de la implementación de mi página web?</summary>
+                        <p>Sí, ofrecemos soporte técnico después de la implementación de tu página web. Nuestro equipo
+                            está
+                            aquí para ayudarte con cualquier duda o problema que puedas tener, asegurando que tu sitio
+                            funcione sin problemas y se mantenga actualizado. Queremos que tengas la mejor experiencia
+                            posible, así que no dudes en contactarnos siempre que lo necesites. ¡Estamos aquí para
+                            ayudarte!
+                        </p>
+                    </details>
+                    <details>
+                        <summary>¿Cómo manejais la seguridad de mis datos?</summary>
+                        <p>La seguridad de tus datos es nuestra máxima prioridad. Nuestros servidores están ubicados en Europa y cumplen con la normativa RGPD 2016/679, garantizando la protección y privacidad de tus datos personales de acuerdo con las leyes europeas.</p>
+                    </details>
+                    <details>
+                        <summary>¿Qué equipos gamer son adecuados para un entorno de trabajo o eventos?</summary>
+                        <p>Recomendamos equipos gamer que no solo ofrecen un alto rendimiento en juegos, sino que
+                            también son ideales para tareas de diseño gráfico y edición de video. Nuestros modelos
+                            cuentan con potentes procesadores y tarjetas gráficas que garantizan un rendimiento
+                            excepcional en cualquier entorno.</p>
+                    </details>
+                </div>
+                <div class="img-faqs">
+                    <img src="/img/gato-teclado.jpg" alt="gato blanco y negro descansando sobre un ordenador"
+                        class="img-gato">
+                </div>
+            </div>
+
+            <div class="recordatorio">
+            </div>
         </main>
 
         <div class="donde-estamos" id="donde-estamos-id">
@@ -177,12 +278,11 @@
             </div>
         </div>
 
-        <div class="recordatorio">
-        </div>
 
-        <div class="formularioIndex">
+
+        <div id="formularioIndex">
             <form action="post">
-                <h2 id="h2formulario">Formulario</h2>
+                <h2 class="h2formulario">Formulario</h2>
 
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" maxlength="15"><br>
@@ -231,15 +331,15 @@
 
 
         <footer class="site-footer">
-            <div class="social"><a href="https://www.facebook.com/people/ComputerZ/61571506870466/" target="_blank"><i
+            <!-- <div class="social"><a href="https://www.facebook.com/people/ComputerZ/61571506870466/" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.tiktok.com/@computerzbarakaldo" target="_blank"><i
                         class="fa-brands fa-tiktok"></i></a>
                 <a href="https://www.instagram.com/computerzbarakaldo/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <!-- <a href="#"><i class="fa-brands fa-whatsapp"></i></a> -->
-            </div>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div> -->
             <ul class="lista-linea">
                 <li class="footer-sobre-nosotros"><a href="/sobre-nosotros.html">Sobre nosotros</a></li>
                 <li class="footer-terminos"><a href="/cookies.html" target="_blank">Cookies</a></li>
