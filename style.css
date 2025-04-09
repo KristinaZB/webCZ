@@ -2,90 +2,100 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body {
     font-family: 'Calibri';
     height: 100vh;
 }
+
 h1 {
-    font-family: 'Anoxic Light';
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
+
 h2 {
-    /* font-family: 'Anoxic Light'; */
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 6px;
     text-align: center;
-    color: white;
 }
+
 h3 {
-    /* font-family: 'Anoxic Light'; */
     font-size: 1.5rem;
 }
+
 a {
     text-decoration: none;
     color: rgb(255, 204, 51);
+    padding-left: 10px;
 }
+
 a:hover {
     color: rgb(0, 218, 152);
-    transition: ease-in-out 0.75s;
+    transition: ease-in-out 0.5s;
 }
+
 li {
     list-style: none;
     font-size: 1.2rem;
 }
+
 p {
     font-size: 1.2rem;
-    margin: 15px;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
 }
-hr{
-   width: 80%;
-   margin: 0 auto;
-    color: rgb(255, 204, 51);
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
 }
+
 /*GENERALES HASTA AQUÍ*/
+
+/* .contenedorIndex{
+    background-image: url(/img/negro-amarillo-propio02.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -100;
+    overflow-x: hidden;
+} */
 
 /*HEADER*/
 
-.contenedorIndex{
-    background-image: url(/img/fondoNegroAmarillo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: -100;
-    overflow-x: hidden;
+.logo-letras {
+    width: 250px;
 }
+
 .site-header {
     padding: 15px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: -100;
-    overflow-x: hidden;
-}
-.site-header .site-nav {
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-size: cover;
+    z-index: -100;
+    width: 100%;
+    background-image: url(/img/negro-verde-propio.png);
 }
-.site-header .contenedor-logo {
+
+.site-header .site-nav {
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 300px;
+    align-items: center;
 }
-.site-header .site-nav .logo-nav {
-    width: 200px;
-    margin: 20px;
+
+.contenedor-logo {
+    text-align: center;
 }
-.site-header .logo-principal {
-    width: 400px;
+
+.logo-principal {
+    width: 900px;
+
 }
+
 .site-header .site-nav .btnIndex {
     width: fit-content;
     background-color: rgba(255, 204, 51, 0);
@@ -97,11 +107,10 @@ hr{
     font-family: 'Anoxic';
     font-size: 1.2rem;
     letter-spacing: 1px;
-
 }
+
 .site-header .btnIndex:hover {
     width: fit-content;
-    background-color: none;
     padding: 10px;
     border-radius: 10px;
     margin: auto;
@@ -109,138 +118,59 @@ hr{
     font-size: 1.2rem;
     letter-spacing: 1px;
     cursor: pointer;
-    transform: scale(1.1);
-    transition: ease 0.5s;
+    box-shadow: 2px -2px 7px 2px #e8ff19, -2px 2px 7px 2px #0cff85;
+    transition: ease .5s;
 }
+
 .site-header .site-nav ul {
-    flex-wrap: wrap;
     padding: 0;
     display: flex;
-    flex-direction: row;
     height: 50px;
     z-index: 100;
-    margin: 20px;
+    margin-right: 15px;
 }
+
+.lista-nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
 .site-header .site-nav ul li {
     list-style: none;
-    margin: 10px;
     color: rgb(255, 204, 51);
 }
+
+.social {
+    display: flex;
+    font-size: 24px;
+    color: rgb(255, 204, 51);
+}
+.social a{
+    margin-left: 5px;
+}
+
+
 /*HASTA AQUÍ HEADER*/
 
 
-/*PÁGINA DE EMPRESA*/
-.contenedor-empresa h1 {
-    text-align: center;
-    margin: 50px 0;
-}
-.contenedor-empresa h2{
-    margin: 50px;
-}
-.contenedor-empresa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contenedor-empresa p {
-    width: 70%;
-    text-align: center;
-    margin: 10px 0;
-}
-.img-zona-empresa{
-    margin: 50px;
-    border-radius: 15px;
-    width: 500px; 
-    height: 600px;
-    object-fit: cover; 
-}
-.bloque-diseno,
-.bloque-consultoria,
-.bloque-reparacion,
-.bloque-ciberseguridad,
-.bloque-asistencia {
-    display: flex;
-}
-.contenedor-empresa .bloque-diseno div,
-.bloque-reparacion div,
-.bloque-consultoria div,
-.bloque-asistencia div,
-.bloque-ciberseguridad div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-/*HASTA AQUÍ ZONA EMPRESA*/
-
 /*MAIN*/
 
-/* .site-main {
-    background-image: url(/img/fondoNegroAmarillo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: -100;
-} */
-
-.contenedorIndex .site-main{
+.contenedorIndex .site-main {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
+
 .contenedorIndex .site-main h1 {
-    color: rgb(255, 204, 51);
+    color: black;
     text-align: center;
-    padding: 50px;
-}
-.contenedorIndex .site-main h2{
-margin: 20px;
+    font-family: 'Anoxic Light';
 }
 
-/*BLOQUE SOLUCIONES*/
-
-.contenedorIndex .site-main .bloque-soluciones{
-    margin: 50px auto;
+.contenedorIndex .site-main h2 {
+margin: 50px;
 }
-
-.bloque-soluciones img{
-    width: 200px;
-    margin: 40px;
-}
-
-.contenedorIndex .site-main.bloque-soluciones div {
-    color: white;
-}
-
-.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1 ul li, .contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2 ul li{
-    color: white;
-    display: block;
-    line-height: 2.5rem;
-}
-
-.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1, .bloque-soluciones2{
-    display: flex;
-    align-items: center;
-}
-
-.contenedorIndex .site-main .bloque-soluciones2 ul li{
-   text-align: right;
-}
-
-.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2{
-    flex-direction: row-reverse;
-   }
-
-.contenedorIndex .site-main .bloque-soluciones h3{
-text-align: center;
-color: white;
-letter-spacing: 5px;
-line-height: 3rem;
-font-size: 2rem;
-}
-
-
-/*HASTA AQUÍ BLOQUE SOLUCIONES*/
 
 /*BLOQUE SERVICIOS*/
 
@@ -249,20 +179,24 @@ font-size: 2rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(235, 235, 235);
 }
+
 
 .site-main .bloque-servicios ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     flex-wrap: wrap;
+    margin: 20px;
+    font-weight: bold;
 }
 
 .site-main .nuestros-servicios ul li {
-    color: white;
-    margin: 20px;
+    color: black;
     animation-duration: 3s;
     animation-name: deslizamiento;
+    padding: 15px;
 }
 
 @keyframes deslizamiento {
@@ -278,77 +212,70 @@ font-size: 2rem;
     }
 }
 
-.site-main .nuestros-servicios ul li:hover {
-    color: white;
-    margin: 20px;
-   
-}
 
 .imagen-bloque-servicios {
     border-radius: 20px;
-    width: 40%;
-    margin: 50px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
 }
 
 .btnSabermas {
     padding: 10px;
     font-size: 1.1rem;
-    background-color: rgb(255, 204, 51);
+    background-color: black;
+    color: rgb(255, 204, 51);
     border-radius: 10px;
-    border: none;
     position: relative;
-    left: 300px;
-    top: 40px;
-    cursor: pointer;
-
-}
-
-.btn-saber-mas:hover {
-    background-color: rgb(255, 102, 242);
+    left: 430px;
+    top: 15px;
     cursor: pointer;
 }
 
-.icono-servicios, .icono-negocios, .icono-mando{
+.btnSabermas:hover {
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 2px -2px 7px 2px #e8ff19, -2px 2px 7px 2px #329e00;
+}
+
+.icono-servicios,
+.icono-negocios,
+.icono-mando {
     width: 200px;
 }
 
-.h2nuestrosServicios{
+.h2nuestrosServicios {
     text-align: center;
-    color: white;
 }
 
-.bloque-para-todos, .bloque-negocios, .bloque-juego {
+.bloque-para-todos,
+.bloque-negocios,
+.bloque-juego {
     width: 50%;
     text-align: center;
-    border: 1px solid rgb(255, 204, 51);
+    box-shadow: 5px 5px 5px;
+    background-color: rgb(255, 204, 51);
     border-radius: 15px;
     margin: 30px 0;
     padding: 15px;
+    color: black;
 }
 
-
-.bloque-juego, .bloque-para-todos,.bloque-negocios{
-    color: white;
-    margin: 20px;
-}
-
-.extensionServicios{
+.extensionServicios {
     display: flex;
 }
 
-.extensionServicios div{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.extensionServicios div ul li{
-margin: auto;
-padding: 10px;
-
+.extensionServicios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
 }
 
-
-
+.extensionServicios div ul li {
+    margin: auto;
+    padding: 10px;
+}
 
 /*HASTA AQUÍ BLOQUE SERVICIOS*/
 
@@ -356,29 +283,75 @@ padding: 10px;
 /*NUESTRA FILOSOFIA*/
 
 .nuestra-filosofia {
-    color: white;
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
 }
 
 /*NUESTRA FILOSOFIA HASTA AQUI*/
 
-/*GAMERZONE*/
+/*BLOQUE SOLUCIONES*/
 
+.contenedorIndex .site-main .bloque-soluciones {
+    margin: 50px auto;
+}
+
+.bloque-soluciones img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 40px;
+
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1 ul li,
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2 ul li {
+    display: block;
+    line-height: 2.5rem;
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones1,
+.bloque-soluciones2 {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contenedorIndex .site-main .bloque-soluciones2 ul li {
+    text-align: right;
+}
+
+.contenedorIndex .site-main .bloque-soluciones .bloque-soluciones2 {
+    flex-direction: row-reverse;
+}
+
+.contenedorIndex .site-main .bloque-soluciones h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+
+/*HASTA AQUÍ BLOQUE SOLUCIONES*/
+
+/*GAMERZONE*/
 .zonaGamer {
-    background-image: url(/img/gamer-morado.jpg);
+    background-image: url(/img/negro-verde-propio.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: auto;
     z-index: 150;
     padding: 50px 20px;
-    filter: saturate(1);
+    border-radius: 15px;
 }
-
 .zonaGamer h2 {
     text-align: center;
+    font-family: 'Anoxic';
+    font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 10px;
@@ -388,27 +361,22 @@ padding: 10px;
         0 0 5px rgb(13, 255, 215),
         0 0 5px rgb(255, 0, 179);
 }
-
-.zonaGamer .contenedor-zonaGamer div {
-    display: flex;
-    flex-direction: column;
-}
-
 .bloque-zonaGamer {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 100px;
 }
-
 .contenedor-zonaGamer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
+.contenedor-zonaGamer div{
+    display: flex;
+    flex-direction: column;
+}
 .pzonaGamer {
     color: white;
     font-size: 1.2rem;
@@ -416,9 +384,12 @@ padding: 10px;
     line-height: 2.5rem;
     text-align: center;
 }
-
+.zonaGamer .contenedor-zonaGamer video{
+    width: 600px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
 .btnEntrar {
-    width: fit-content;
     background-color: rgba(255, 204, 51, 0);
     color: rgb(255, 204, 51);
     border: 2px solid rgb(255, 204, 51);
@@ -429,10 +400,7 @@ padding: 10px;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
-
 .btnEntrar:hover {
-    width: fit-content;
-    background-color: none;
     padding: 10px;
     border-radius: 10px;
     margin: auto;
@@ -441,111 +409,167 @@ padding: 10px;
     letter-spacing: 1px;
     cursor: pointer;
 }
-
 .animacion:hover,
 .animacion:focus {
-    -webkit-animation: animacion 1s;
+    animation: animacion 1s;
     animation: animacion 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
-
-@-webkit-keyframes animacion {
-    0% {
-        box-shadow: 0 0 0 0 var(--hover);
-    }
-}
-
 @keyframes animacion {
     0% {
         box-shadow: 0 0 0 0 var(--hover);
     }
 }
-
 .animacion {
     --color: #ef6eae;
     --hover: #ef8f6e;
 }
-
-.slider-zonaGamer {
-    width: 600px;
-    margin: 30px;
-    border-radius: 5px;
-}
-
 /*HASTA AQUÍ GAMERZONE*/
-
+/*FAQS DEL INDEX Y DE ZONA EMPRESA!!!*/
+.faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.faqs summary {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+.faqs summary:hover {
+    cursor: pointer;
+    color: rgb(0, 218, 152);
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    top: 0;
+   
+}
+/* details[open] summary {
+    max-height: 200px;
+    transition: max-height 0.3s ease; 
+} *//*NO SIRVE PARA NADA!!*/
+.faqs details p {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.img-gato {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 40px;
+    object-fit: cover;
+}
+/*HASTA AQUI FAQS*/
 /*DONDE ESTAMOS*/
-
 .donde-estamos {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: rgb(228, 228, 228)
 }
-
 .donde-estamos div {
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .donde-estamos div a {
     font-size: 1.2rem;
     margin: 15px;
 }
-
 /*DONDE ESTAMOS HASTA AQUI*/
-
 /* RECORDATORIO */
-
 .recordatorio img {
     width: 200px;
 }
-
 .recordatorio {
     background-image: url(img/Logo-negro.png);
-    background-color: rgb(228, 228, 228);
     background-size: 600px;
     background-position: center;
     background-repeat: no-repeat;
     height: 700px;
-
 }
-
 /* HASTA AQUÍ RECORDATORIO */
 
-/*SOBRE NOSOTROS*/
-
-.contenedor-sobre-nosotros h1{
-   text-align: center;
+/*PÁGINA DE EMPRESA*/
+/* .contenedor-zona-empresa {
+    background-image: url(/img/negro-amarillo-propio02.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -100;
+    overflow-x: hidden;
+} */
+.contenedor-zona-empresa h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 100px;
 }
-
-/*SLIDER DESDE AQUÍ*/
+.contenedor-zona-empresa h2 {
+   font-weight: bold;
+    margin: 100px 0 50px 0;
+}
+.beneficios {
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.beneficios ol li {
+    list-style-type: decimal;
+    width: 70%;
+    margin: 20px auto;
+}
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+.servicios,
+.reparacion,
+.soporte,
+.ciberseguridad,
+.consultoria {
+    background-color: silver;
+    padding: 50px;
+    margin: 20px 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.contenedor-servicios img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px;
+}
+/*HASTA AQUÍ ZONA EMPRESA*/
+/*SOBRE NOSOTROS*/
+.contenedor-sobre-nosotros h1 {
+    text-align: center;
+}
+/*SLIDER ZONA EMPRESA DESDE AQUÍ*/
 .slider {
     position: relative;
     max-width: 700px;
     margin: auto;
     overflow: hidden;
 }
-
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .slide {
     min-width: 100%;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: auto;
 }
-
-.slider .prev, .next{
+.slider .prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -556,61 +580,62 @@ img {
     cursor: pointer;
     font-size: 30px;
 }
-
-
 button.prev {
     left: 10px;
 }
-
 button.next {
     right: 10px;
 }
 /*SLIDER HASTA AQUÍ*/
-
 /*SOBRE NOSOTROS*/
-
 /*FORMULARIO PRINCIPAL (INDEX)*/
-
-.formularioIndex form {
+#formularioIndex form .h2formulario {
+    color: black;
+    margin: 30px;
+}
+#formularioIndex form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(197, 197, 197);
     padding: 50px;
 }
-
-.formularioIndex form>input {
+#formularioIndex form>input {
     width: 40%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     border: 1px solid rgb(73, 73, 73);
 }
-
-.formularioIndex fieldset {
+#formularioIndex fieldset {
     margin: 10px auto;
-    border: none;
     text-align: center;
     border: 2px solid black;
     padding: 20px;
     width: 30%;
 }
-
-.formularioIndex fieldset legend {
+#formularioIndex fieldset legend {
     margin: auto;
+    font-size: 1.2rem;
 }
-
-.formularioIndex textarea {
+#formularioIndex label{
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+#formularioIndex textarea {
     width: 50%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     border: none;
 }
-
-
+.btnEnviar {
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
 /*HASTA AQUÍ FORMULARIO PRINCIPAL (INDEX)*/
-
 /*FORMULARIO INICIO DE SESIÓN PARA ZONA EMPRESA*/
 #formulario-registro-empresa {
     display: flex;
@@ -618,57 +643,43 @@ button.next {
     background-color: black;
     align-items: center;
 }
-
 #formulario-registro-empresa .site-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #formulario-registro-empresa .logueo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #formulario-registro-empresa .logueo .registro {
     display: flex;
 }
-
 #formulario-registro-empresa .logueo .logueoUsuario {
     display: flex;
     flex-direction: column;
 }
-
 #formulario-registro-empresa .logueo .registro div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .contenedorOtrasPaginas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .btnOtraPagina {
     margin: 10px;
 }
-
 #formulario-inicio p {
     text-align: center;
     color: white;
 }
-
 .registrarse {
     margin: 20px;
 }
-
-#formulario-registro-empresa p {
-    color: lightsteelblue;
-}
-
 .logueoUsuario input {
     padding: 8px;
     border-radius: 15px;
@@ -677,7 +688,6 @@ button.next {
     color: rgb(255, 204, 51);
     border: 1px solid rgb(255, 204, 51);
 }
-
 .btnOtraPagina {
     padding: 8px;
     margin: 14px;
@@ -686,58 +696,32 @@ button.next {
     cursor: pointer;
     color: rgb(255, 204, 51);
 }
-
 #formulario-registro-empresa .logueo button {
     margin: 15px;
     background-color: transparent;
 }
-
-.fa-discord {
-    color: rgb(255, 204, 51);
-}
-
-.fa-google {
-    color: rgb(255, 204, 51);
-}
-
-.fa-apple {
-    color: rgb(255, 204, 51);
-}
-
-#facebookSesion {
-    color: rgb(255, 204, 51)
-}
-
 /*HASTA AQUÍ INICIO SESIÓN EMPRESA*/
-
 /*FORMULARIO NUEVO REGISTRO*/
-
 .formularioNuevoRegistro form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(228, 228, 228);
     padding: 50px;
 }
-
 .formularioNuevoRegistro form>input {
     width: 40%;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    border: none;
     border: 1px solid black;
 }
-
 .formularioNuevoRegistro fieldset {
     margin: 10px auto;
-    border: none;
     text-align: center;
     border: 2px solid black;
     padding: 20px;
     width: 30%;
 }
-
 .formularioNuevoRegistro textarea {
     width: 50%;
     padding: 10px;
@@ -745,17 +729,12 @@ button.next {
     border-radius: 10px;
     border: none;
 }
-
-
 /*HASTA AQUÍ FORMULARIO NUEVO REGISTRO*/
-
 /*SITE FOOTER*/
-
 .site-footer {
     padding: 20px 0;
     background-color: rgb(10, 10, 10);
 }
-
 .site-footer ul {
     padding: 0;
     list-style: none;
@@ -766,28 +745,23 @@ button.next {
     margin-bottom: 0;
     color: rgb(182, 182, 182);
 }
-
 .site-footer li {
     padding: 0 5px;
     color: rgb(182, 182, 182);
     margin: 10px;
 }
-
 .site-footer ul a {
     color: inherit;
     text-decoration: none;
     opacity: 0.8;
 }
-
 .site-footer ul a:hover {
     opacity: 1;
 }
-
 .site-footer .social {
     text-align: center;
     padding-bottom: 20px;
 }
-
 .site-footer .social>a {
     font-size: 24px;
     width: 40px;
@@ -795,17 +769,13 @@ button.next {
     line-height: 40px;
     display: inline-block;
     text-align: center;
-    border-radius: 50%;
-    border: 1px solid rgb(182, 182, 182);
     margin: 0 8px;
     color: inherit;
     opacity: 0.75;
 }
-
 .site-footer .social>a:hover {
     opacity: 0.9;
 }
-
 .site-footer .copyright {
     margin-top: 15px;
     text-align: center;
@@ -813,68 +783,67 @@ button.next {
     color: rgb(182, 182, 182);
     margin-bottom: 0;
 }
-
-.fa-facebook {
-    color: rgb(182, 182, 182);
-}
-
-.fa-instagram {
-    color: rgb(182, 182, 182);
-}
-
-.fa-linkedin {
-    color: rgb(182, 182, 182);
-}
-
-.fa-whatsapp {
-    color: rgb(182, 182, 182);
-}
-
-.fa-tiktok {
-    color: rgb(180, 182, 182);
-}
-
-
 /*HASTA AQUÍ SITE-FOOTER*/
-
 /*COOKIES, AVISO LEGAL Y POLITICA DE PRIVACIDAD */
-
 .temasLegales {
     margin: 50px;
 }
-
 .temasLegales ul {
     margin-left: 40px;
 }
-
 .temasLegales ul li {
     list-style: square;
     line-height: 2;
     margin-left: 50px;
 }
-
 .temasLegales table {
     border: 2px solid black;
     width: 80%;
     padding: 10px;
 }
-
 .temasLegales table tr {
     display: flex;
     justify-content: space-around;
 }
-
 .temasLegales h1 {
     margin: 50px;
 }
-
 .temasLegales h2 {
     margin: 50px 50px 30px 30px;
 }
-
 .temasLegales p {
     width: 80%;
     margin-left: 30px;
 }
-
+.lista-linea li:hover{
+    color: rgb(0, 218, 152);
+}
 /*HASTA AQUÍ COOKIES, AVISO LEGAL Y POLITICA DE PRIVACIDAD*/
+/* PÁGINA ZONA GAMER*/
+/*PÁGINA ZONA GAMER HASTA AQUÍ*/
+/*MEDIA QUERIES*/
+
+/*MENU HAMBURGUESA*/
+.abrir-menu{
+    display: none;
+}
+/*HASTA AQUÍ MENU HAMBURGUESA*/
+@media screen and (max-width:480px){
+    .abrir-menu{
+        display: block;
+    }
+
+    .site-nav{
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 500px) and (max-width: 1024px){
+}
+
+@media screen and (min-width:1025px){
+
+} */
+
+
+/*HASTA AQUI MEDIA QUERIES*/
